@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Player</title>
+  <link rel="stylesheet" href="player.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+    <!-- This link for fa fa icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+</head>
+<body>
+  <div id="left">
+    <video id="video_player">
+      <source id="video_src" src="https://www.statuszon.com/wp-content/uploads/2025/06/Top-Trending-Motivational-Status-Videos-For-You.mp4">
+    </video>
+
+    <div id="progress_box">
+      <div id="progress_bar"></div>
+    </div>
+
+    <div id="control">
+      <div id="timing">
+        <p id="v_timing">00:00/00:00</p>
+      </div>
+      <div id="play_tool">
+        <i class="fa-solid fa-angles-left" id="left_btn"></i>
+        <i class="fa-solid fa-circle-play" id="play_btn"></i>
+        <i class="fa-solid fa-angles-right" id="right_btn"></i>
+      </div>
+
+      <div id="other_tool">
+        
+        <div id="vol_box">
+          <input type="range" min="0" max="1" step="0.01" id="vol_control" style="display: none;">
+          <i class="fa-solid fa-volume-high" id="volume"></i>
+       </div>
+
+       <div id="speed_box">
+          <input type="range" min="0" max="2" step="0.25" id="speed_control" style="display: none;">
+         <i class="fa-solid fa-gauge-high" id="setting"></i> 
+       </div>
+       
+        
+        <i class="fa-solid fa-expand" id="full_screen"></i>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div id="right">
+    <div id="top">
+      <h3>Playlist</h3>
+      <input type="search" id="search" class="search_video" placeholder="Search your video here...">
+
+      <i class="fa-solid fa-circle-plus" id="open_video_add_btn"></i>
+      <div id="add_video_box">
+        <h2>Add Video</h2>
+        <form>
+          <input type="text" id="video_name" placeholder="Enter your video Name..."> 
+          <input type="text" id="video_link" placeholder="Enter your video Link..."> 
+          <button type="submit" id="add_video_btn">Add</button>
+        </form>
+      </div>
+    </div>
+
+
+    <div id="buttom">
+      
+    </div>
+
+  </div>
+
+  <script src="player.js"></script>
+</body>
+</html>

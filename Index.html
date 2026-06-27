@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Application</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- This link is used for heading's font  and this link's code copy by google font website-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<!-- This link is developed by "animated css" website -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+<!-- This link for fa fa icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min,css" intergrity="sha512-+4zcK9k+qNFUR5X +cKL9EIRZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV29IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+</head>
+<body>
+  <div id="contaner">
+
+    <div id="page">
+      <!-- start Login code -->
+      <div id="login" class="animate__animated animate__flipInY">
+        <h1 align="center">Login</h1>
+
+        <form id="login_frm" autocomplete="off">
+          <input type="email" placeholder="Email id" id="login_email" required="required"> 
+          <small id="login_email_warning"> <i class="fa-solid fa-triangle-exclamation"></i> Email id is not registered</small>
+            <input type="password" placeholder="Password" id="login_pass" required="required">
+            <small id="login_password_warning"> <i class="fa-solid fa-triangle-exclamation"></i> Wrong password</small>
+
+            <button type="submit" id="login_btn">Login</button>
+        </form>
+
+        <p>Don't have an account ? <span id="signup_link">Sign up</span></p>
+      </div>
+      <!-- End login code -->
+
+      <!-- Start signup code -->
+      <div id="signup" class="animate__animated animate__flipInY">
+         <h1 align="center">Sign up</h1>
+
+        <form id="signup_frm" autocomplete="off">
+          <input type="text" placeholder="Name" id="username" required="required">
+          <input type="email" placeholder="Email" id="email" required="required"><small id="email_notice"> <i class="fa-solid fa-triangle-exclamation"></i> Email id Already exist</small>
+          <input type="number" placeholder="Phone No" id="phone" required="required">
+          <input type="password" placeholder="Password" id="pass" required="required">
+          <button type="submit" id="signup_btn">Sign up</button>
+        </form>
+        <p>Already have an account ? <span id="login_link">Login</span></p>
+      </div>
+      <!-- End signup code -->
+
+    </div>
+  </div>
+
+
+  <!-- Start external JS coding -->
+   <script src="script.js"></script>
+   <script src="login_signup.js"></script>
+  <!-- End external JS coding -->
+</body>
+</html>
